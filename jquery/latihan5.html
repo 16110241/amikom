@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Effects - Animation</title>
+	<script src="query.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("button").click(function() {
+				$("div").animate({
+					left: '250px'
+					opacity: '0.5'
+					height: '150px'
+					widht: '150px'
+				});
+			});
+		});
+	</script>
+</head>
+<body>
+		<button>Start Animation</button>
+
+		<p>By default, all HTML elements have a static position,cannot be moved. To manipulate the position, remember to first set
+		the CSS position property of the elements to relative, fixed, or absolute!</p>
+
+		<div style="background: #98bf21;height: 100px;position: absolute;"></div>
+</body>
+</html>
